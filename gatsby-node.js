@@ -3,7 +3,7 @@ const path = require('path');
 exports.createPages = async ({ page, actions }) => {
   const { createPage } = actions;
 
-  const router = [{ path: '/', name: 'CV' }];
+  const router = [{ path: '/', name: 'CV' }, {path: '/recruiter', name:'Recruiter'}];
 
   const locales = ['en'];
 

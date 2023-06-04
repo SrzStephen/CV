@@ -4,6 +4,7 @@ import { OutboundLink } from "gatsby-plugin-google-gtag"
 export interface Props {
   github: string;
   website: string;
+  cv?: string;
 }
 
 
