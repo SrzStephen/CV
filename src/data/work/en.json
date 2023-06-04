@@ -9,15 +9,24 @@
       "location": "Western Australia",
       "description": "",
       "achievements": [
+        "Improved on prem HBase and HDFS performance and reliability",
+        "Set up monitoring and alerting for Kafka and HBase to quickly diagnose degradations and issues",
+        "Performed a technical architecture review on a large data intensive brownfields project with the result being picked up as a project",
+        "Migrated and on premises HBase instance to Elastic Map Reduce (EMR), tuning settings for performance/reliability",
         "Took up a Product Management role to cover a secondment (8 months)",
-        "Performed technical architecture review on a brownfields project",
-        "Analysed and improved HBase and HDFS performance and reliability",
-        "Set up monitoring for Kafka and Hbase to quickly diagnose degradations and issues"
+        "Worked on projects to integrate multiple in-cab safety and mining systems (Guardian Driver Safety System, Navman, Collision Awareness Safety System, Minestar, Modular) into one holistic view of safety for heavy and light vehicle fleets",
+        "Improved reliability of some of these in-cab systems across multiple failure modes",
+        "Flagged areas where our business processes were causing the management of safety procedures to failed and worked on plans to remediate short and long term"
       ],
       "technologies": [
         "HBase",
         "Kafka",
-        "Python"
+        "Python",
+        "EMR",
+        "Terraform",
+        "GitLab CICD",
+        "SQL",
+        "Docker"
       ]
     },
     {
