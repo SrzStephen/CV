@@ -53,8 +53,8 @@ export default (props: Props) => {
                   <li>The job title</li>
                   <li> Location requirements (e.g. full-time WFH, in-office, hybrid)</li>
                   <li>
-                    A rough salary/contract rate range, and whether or not this figure includes superannuation. (Note
-                    that negotiable is not a range, it's an admission that you're fishing).
+                    A rough salary/contract rate range, and whether or not this figure includes superannuation.
+                    (Negotiable is not a range).
                   </li>
                 </ul>
                 Please note: I won't call you for a "quick chat" if you have failed to provide the above information.
