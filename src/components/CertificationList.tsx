@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Certification, Props as CertificationProps } from './Certification';
-import * as dayjs from 'dayjs'
+import * as dayjs from 'dayjs';
 
 interface Props {
   certifications: CertificationProps[];

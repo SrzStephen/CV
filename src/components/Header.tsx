@@ -1,7 +1,7 @@
 import Img from 'gatsby-image';
 import * as React from 'react';
 import { Props as socialMediaProps, SocialMedia } from './SocialMedia';
-import Paper from "../assets/images/backgrounds/paper.png";
+import Paper from '../assets/images/backgrounds/paper.png';
 
 interface Props {
   name: string;
@@ -13,7 +13,7 @@ interface Props {
 }
 
 export const Header = (props: Props) => (
-  <header className='resume-header pt-lg-0'>
+  <header className="resume-header pt-lg-0">
     <div className="media flex-lg-row">
       <div
         className="media-body p-4 d-flex flex-lg-row mx-lg-0"
@@ -23,9 +23,9 @@ export const Header = (props: Props) => (
           <h1 className="name mt-0 mb-1 text-white text-uppercase text-uppercase">{props.name}</h1>
           <div className="title mb-3">{props.role}</div>
           <ul className="list-unstyled">
-          <li className="mb-2">                
-          <i className="fa fa-map-marker fa-fw mr-2" data-fa-transform="grow-3" />
-                {props.location}
+            <li className="mb-2">
+              <i className="fa fa-map-marker fa-fw mr-2" data-fa-transform="grow-3" />
+              {props.location}
             </li>
             <li className="mb-2">
               <a href={`mailto:${props.email}`} className="link-unstyled">
@@ -42,7 +42,6 @@ export const Header = (props: Props) => (
             <SocialMedia {...props.socialMedia} />
           </ul>
         </div>
-
       </div>
     </div>
   </header>
