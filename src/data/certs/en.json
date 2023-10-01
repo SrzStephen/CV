@@ -1,9 +1,17 @@
 { 
     "certs": [
+                {
+            "title": "AWS Certified Solutions Architect - Associate",
+            "validity": "18/09/2023 - 18/09/2026",
+            "cert_id": "",
+            "cert_url": "https://www.credly.com/badges/6bc43f22-b1ac-423e-a9ba-36ae7fad30b0",
+            "sort_date": "18/09/2023",
+            "show": true
+        },
         {
             "title": "AWS Certified SysOps Administrator - Associate",
             "validity": "03/01/2023 - 03/01/2026",
-            "cert_id": "1601251",
+            "cert_id": "",
             "cert_url": "https://www.credly.com/badges/03cc8d4b-2e00-47ce-b696-4c5d9eaab28f/public_url",
             "sort_date": "15/06/2022",
             "show": true
