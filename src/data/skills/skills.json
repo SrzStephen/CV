@@ -10,9 +10,6 @@
       "name": "Bash"
     },
     {
-      "name": "VBA"
-    },
-    {
       "name": "FastAPI"
     },
     {
@@ -20,6 +17,9 @@
     }
   ],
   "tools": [
+    {
+      "name": "AWS"
+    },
     {
       "name": "Jira"
     },
@@ -40,9 +40,6 @@
     },
     {
       "name": "NiFi"
-    },
-    {
-      "name": "AWS"
     },
     {
       "name": "Pytest"

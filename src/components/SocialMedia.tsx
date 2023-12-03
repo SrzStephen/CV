@@ -23,19 +23,6 @@ export const SocialMedia = (props: Props) => (
           {props.github}
         </OutboundLink>
       </li>
-      <li className="mb-2">
-        <OutboundLink
-          href={`http://${props.website}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link-unstyled"
-        >
-          <span className="fa-container text-center mr-2">
-            <i className="fas fa-globe fa-fw" />
-          </span>
-          {props.website}
-        </OutboundLink>
-      </li>
     </ul>
   </div>
 );

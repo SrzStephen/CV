@@ -177,11 +177,10 @@ export default (props: Props) => {
       </article>
       <footer className="footer text-center pt-2">
         <small className="copyright">
-          Designed with <i className="fas fa-heart" /> by{' '}
-          <a href="http://themes.3rdwavemedia.com" target="_blank">
+          Original theme by{' '}
+          <a href="https://github.com/xriley" target="_blank">
             Xiaoying Riley
           </a>{' '}
-          for developers
         </small>
       </footer>
       <footer className="footer text-center pt-2 pb-5">
