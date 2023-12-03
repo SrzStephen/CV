@@ -9,16 +9,17 @@
       "location": "Western Australia",
       "description": "",
       "achievements": [
-        "Improved on prem HBase and HDFS performance and reliability",
-        "Set up monitoring and alerting for Kafka and HBase to quickly diagnose degradations and issues",
-        "Performed a technical architecture review on a large data intensive brownfields project with the result being picked up as a project",
-        "Migrated and on premises HBase instance to Elastic Map Reduce (EMR), tuning settings for performance/reliability",
-        "Took up a Product Management role to cover a secondment (8 months)",
-        "Worked on projects to integrate multiple in-cab safety and mining systems (Guardian Driver Safety System, Navman, Collision Awareness Safety System, Minestar, Modular) into one holistic view of safety for heavy and light vehicle fleets",
-        "Improved reliability of some of these in-cab systems across multiple failure modes",
-        "Identified and remediated places where business procedures were preventing safety systems working as intended"
+        "Worked to consolidate multiple vendor provided safety systems across heavy and light vehicle fleets into a single view of driver behaviour.",
+        "Identified issues with business processes that were preventing safety system interventions working as intended and worked on remediations.",
+        "Developed solutions to improve reliability of safety systems through monitoring known silent modes of failure.",
+        "Began a project to implement better DevSecOps into our software development process.",
+        "Performed a technical review on an existing software project which resulted in that application being refactored to the cloud.",
+        "Migrated an on premises HBase cluster running time series workloads to AWS Elastic Map Reduce (EMR) with significantly less compute.",
+        "Took up a product management role to cover a secondment within the team.",
+        "Improved monitoring and alerting to ensure that we had a more reliable product and could more easily track degradations."
       ],
       "technologies": [
+        "Python",
         "HBase",
         "Kafka",
         "Python",
@@ -26,7 +27,8 @@
         "Terraform",
         "GitLab CICD",
         "SQL",
-        "Docker"
+        "Docker",
+        "AWS"
       ]
     },
     {
@@ -38,11 +40,11 @@
       "location": "Western Australia",
       "description": "",
       "achievements": [
-        "Involved in multiple projects including conveyor optimisation, safety dashboard development and WTS/LTE network monitoring for autonomous and conventional haulage vehicles",
-        "Performed root cause analysis on incidents to focus efforts to improve application reliability",
-        "Built reliable stream and batch data collection and processing pipelines using NiFi, Kafka and Python",
-        "Managed work for four people in an agile team, under the scrum of scrums structure",
-        "Worked to migrate edge deployments from RHEL packages to Docker compose stacks to improve reliability"
+        "Involved in multiple projects including conveyor optimisation, safety dashboard development and WTS/LTE network monitoring for autonomous and conventional haulage vehicles.",
+        "Performed root cause analysis on incidents to focus efforts to improve application reliability.",
+        "Built reliable stream and batch data collection and processing pipelines using NiFi, Kafka and Python.",
+        "Managed work for four people in an agile team, under the scrum of scrums structure.",
+        "Worked to migrate edge deployments from RHEL packages to docker compose stacks to improve deployment reliability."
       ],
       "technologies": [
         "HDFS",
@@ -68,10 +70,10 @@
       "location": "Western Australia",
       "description": "",
       "achievements": [
-        "Primarily involved in an operational technology project which collects approximately 20,000 numeric metrics a second",
-        "Rolled out projects to enable monitoring for South American and East Australian sites",
-        "Developed collection code for operational technology assets including radios, safety systems, access points, microwave links and LTE equipment through a variety of protocols",
-        "Proactively identifying and fixing issues within existing code and within the RedHat Linux production environments that hosted them"
+        "Primarily involved in an operational technology project which collected approximately 20,000 numeric metrics a second from multiple minesites.",
+        "Rolled out projects to enable monitoring for South American and East Australian sites.",
+        "Developed collection code for operational technology assets including radios, safety systems, access points, microwave links and LTE equipment through a variety of protocols.",
+        "Proactively identified, fixed and added additional monitoring for issues within code and the underlying RedHat Linux production environment that hosted code."
       ],
       "technologies": [
         "Python",
@@ -91,9 +93,9 @@
       "location": "Western Australia",
       "description": "",
       "achievements": [
-        "Standardised thousands of legacy vessel and pipeline inspections with data sources including paper based inspections, Microsoft Access databases and Excel spreadsheets",
-        "Assisted in a reconciliation process involving identifying the differences between as‑built isometrics and general arrangements with items presently on site",
-        "Wrote numerous VBA scripts to improve productivity of myself and others"
+        "Standardised thousands of legacy vessel and pipeline inspections with data sources including paper based inspections, Microsoft Access databases and Excel spreadsheets.",
+        "Assisted in a reconciliation process involving identifying the differences between as‑built isometrics and general arrangements with items presently on site.",
+        "Wrote numerous VBA scripts and addons to improve productivity of myself and others."
       ],
       "technologies": [
         "VBA",
@@ -109,13 +111,13 @@
       "location": "Western Australia",
       "description": "",
       "achievements": [
-        "Worked across the Project Management and Mechanical Engineering Departments",
-        "Developed software in VBA to automate the creation of standardised engineering calculations",
-        "Automated the creation of Project Management documents and processes using the VBA object models for Excel, Outlook and Word",
-        "Used Primevera P6 to update the schedule of ongoing projects"
+        "Worked across the Project Management and Mechanical Engineering Departments.",
+        "Developed software in VBA to automate the creation of standardised engineering calculations.",
+        "Automated the creation of Project Management documents and processes using the VBA object models for Excel, Outlook and Word.",
+        "Used Primavera P6 to update the schedule of ongoing projects."
       ],
       "technologies": [
-        "Primevera P6",
+        "Primavera P6",
         "VBA",
         "Excel"
       ]

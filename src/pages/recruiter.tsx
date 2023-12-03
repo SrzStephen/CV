@@ -38,23 +38,21 @@ export default (props: Props) => {
               <h2 className="resume-section-title font-weight-bold pb-3 mb-3"></h2>
               <div className="resume-position-title-no-link mb-1">
                 <p>
-                  Hi, thanks for reaching out.
+                  Hi! Thanks for reaching out.
                   <br />
-                  Please excuse the generic response; I get a lot of messages from recruiters who are trying to fill
-                  positions.
-                  <br />
-                  If that description applies to you, please be sure that you've provided the following info:
+                  Please excuse the generic response; I find that I get a lot of messages from recruiters trying to fill
+                  roles. Please be sure to provide me with the following information.
                 </p>
                 <ul className="resume-awards-list" style={{ marginLeft: '17px' }}>
                   <li>The industry of your client (e.g. mining, health, education)</li>
                   <li>The technologies that form their core tech stack (e.g. Python, Java, Flask, React)</li>
                   <li>The nature of the position (contract or permanent)</li>
-                  <li>The length of contract if it's a contract position</li>
+                  <li>The length of contract if applicable</li>
                   <li>The job title</li>
                   <li> Location requirements (e.g. full-time WFH, in-office, hybrid)</li>
                   <li>
-                    A rough salary/contract rate range, and whether or not this figure includes superannuation.
-                    (Negotiable is not a range).
+                    A rough salary/contract rate range inclusive of superannuation.{' '}
+                    <b>Please note that "Negotiable" is not a range</b>.
                   </li>
                 </ul>
                 Please note: I won't call you for a "quick chat" if you have failed to provide the above information.

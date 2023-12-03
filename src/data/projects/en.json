@@ -1,26 +1,6 @@
 {
   "projects": [
     {
-      "title": "AWS IOT Custom Authorizer",
-      "role": "",
-      "url": "https://github.com/SrzStephen/python-aws-iot-custom-authorizer",
-      "company": "",
-      "from": "",
-      "to": "",
-      "location": "Online",
-      "description": "Custom AWS IOT Authorizer for use with MQTT clients that couldn't support x509 certificate authentication",
-      "achievements": [
-        "Got annoyed with AWS documentation because it was unclear on implementation and how to connect",
-        "Spent time focusing on making my code readable and testable with pydantic typing and pytest tests",
-        "Included connection examples for Pacheo, AWS IOT Client and Arduino (PubSubLib), with the first 2 included as part of integration tests."
-      ],
-      "technologies": [
-        "Python",
-        "Pytest",
-        "AWS"
-      ]
-    },
-    {
       "title": "DisaVu",
       "role": "",
       "url": "https://devpost.com/software/disavu",
@@ -30,9 +10,9 @@
       "location": "Online",
       "description": "Solution that uses machine learning to improve disaster response after hurricanes/tornadoes",
       "achievements": [
-        "First place in the AWS Disaster Response Hackathon",
-        "Machine learning models to predict building footprints and to predict whether buildings in those footprints are damaged to evaluate damage after a natural disaster",
-        "Solution was presented in RE:MARS by AWS"
+        "First place in the AWS Disaster Response Hackathon.",
+        "Machine learning models to predict building footprints and to predict whether buildings in those footprints are damaged to evaluate damage after a natural disaster.",
+        "Solution was presented at the AWS RE:MARS event by AWS."
       ],
       "technologies": [
         "Rust",
@@ -52,9 +32,9 @@
       "location": "Online",
       "description": "Hadoop and Spark integration using Seagates CORTX S3 compatible API",
       "achievements": [
-        "Second place in the Seagate CORTX Integration Challenge",
-        "Integration with Hadoop and Spark to use the Seagate COTRX object storage as a backend instead of HDFS",
-        "Created an ansible script to automate the setup of the integration for a standalone single node cluster"
+        "Second place in the Seagate CORTX Integration Challenge.",
+        "Integration with Hadoop and Spark to use the Seagate COTRX object storage as a backend instead of HDFS.",
+        "Created an ansible script to automate the setup of the integration for a standalone single node cluster."
       ],
       "technologies": [
         "Ansible",
@@ -72,10 +52,10 @@
       "location": "",
       "description": "Used an Azure Sphere IOT device along with Azure IOT services to create a dashboard of CO2 and Dust levels in my room",
       "achievements": [
-        "Runner up in the Azure Sensing the World competition",
-        "Wrote C code targeting the Azure Sphere IOT device (including libraries for the MHZ-19 and PMS7003 sensors)",
-        "Used Azure IOT for transport of device to cloud messages",
-        "Implemented Azure Direct Methods on the Azure Sphere to modify the devices mutable state via cloud to device messages"
+        "Runner up in the Azure Sensing the World competition.",
+        "Wrote C code targeting the Azure Sphere IOT device (including libraries for the MHZ-19 and PMS7003 sensors).",
+        "Used Azure IOT for transport of device to cloud messages.",
+        "Implemented Azure Direct Methods on the Azure Sphere to modify the devices mutable state via cloud to device messages."
       ],
       "technologies": [
         "Azure",
@@ -96,9 +76,10 @@
       "location": "",
       "description": "Cloud enabled RFID lock using the Azure Sphere IOT device",
       "achievements": [
-        "One of several runners up in the Secure Everything with Azure Sphere Challenge",
-        "Built an IOT enabled lock that was capable of working with and without a network connection",
-        "Allowed over the air addition of new RFID cards"
+        "One of several runner-up awards in the Secure Everything with Azure Sphere Challenge.",
+        "Used Azure Sphere hardware to build an IOT enabled lock that was capable of working with and without a network connection.",
+        "Allowed over the air addition of new RFID cards.",
+        "Built an Azure Web app component with Active Directory authentication to host the UI component of the application."
       ],
       "technologies": [
         "Azure",
@@ -117,8 +98,8 @@
       "location": "Perth",
       "description": "WACTF is a weekend long challenge based cybersecurity competition (Capture the Flag) created and hosted by the Perth cybersecurity community.",
       "achievements": [
-        "Placed second amongst 60 teams competing that weekend",
-        "Learnt a lot during the weekend about defencive and offencive security"
+        "Placed second amongst 60 teams competing that weekend.",
+        "Learnt a lot during the weekend about offence and defencive security across web, exploit and cryptography challenges."
       ],
       "technologies": [
         "Wireshark",
@@ -136,8 +117,8 @@
       "location": "",
       "description": "AR/VR data exploration and visualisation",
       "achievements": [
-        "One of four finalists for the Best Use of Hardware award",
-        "Used Unity to build an AR/VR data visualisation solutions to be used in classrooms"
+        "One of four finalists for the Best Use of Hardware Award.",
+        "Used Unity to build an AR/VR data visualisation solutions to be used in classrooms."
       ],
       "technologies": [
         "Unity",
@@ -157,9 +138,11 @@
       "location": "",
       "description": "Created a physics based monte carlo simulator to minimise rock bridges",
       "achievements": [
-        "Built a simulator that was capable of doing a physics based simulation of rocks being tipped from a dump truck to calculate blockages in a primary crusher chute",
-        "The simulator would generate the rock distribution of the dump truck based on blasting parameters",
-        "The end output of the simulation was an optimisation on explosive cost to get a specific fragmentation distribution and that distributions chance of generating a rock bridge"
+        "Built a physics based simulator of rocks tipping from a dump truck to calculate the impact of rock fragmentation on blockages in a primary crusher chute.",
+        "The simulator generated rocks along a rock fragmentation probability distribution function which is generated by a set of blasting inputs.",
+        "These rocks would then be tipped into a modelled primary crusher chute and using descrete element analysis over a small set of time jumps, modelled the final resting places of the rocks.",
+        "Running this simulation 100s of times we had a monte carlo probability of a rock bridge being generated, and the size of that rock bridge.",
+        "Finally, the probabilities were used to generate an estimated outage cost for each set of blasting parameters, which allowed for optimisation against cost of explosives to increase rock fragmentation."
       ],
       "technologies": [
         "Unity",
@@ -175,10 +158,10 @@
       "from": "",
       "to": "",
       "location": "",
-      "description": "Machine Learning production optimisation",
+      "description": "Machine Learning production optimisation.",
       "achievements": [
-        "Built a digital twin of a grinding circuit",
-        "Used a genetic algorithm to provide recommendations to operators for settings that may optimise the grinder for a given set of inputs"
+        "Built a digital twin of a grinding circuit.",
+        "Used a genetic algorithm to provide recommendations to operators for settings that may optimise the grinder for a given set of inputs."
       ],
       "technologies": [
         "Python",
@@ -193,10 +176,10 @@
       "from": "",
       "to": "",
       "location": "",
-      "description": "Mesh networked IOT safety device using the B.A.T.M.A.N mesh networking protocol",
+      "description": "Mesh networked IOT safety device using the B.A.T.M.A.N mesh networking protocol.",
       "achievements": [
-        "First place in the BHP/Unearthed Digital Tribes Hackathon",
-        "Built an IOT device to improve safety in mine sites with limited telemetry by using mesh networking over 2.4GHz WiFi"
+        "First place in the BHP/Unearthed Digital Tribes Hackathon.",
+        "Built an IOT device to improve safety in mine sites with limited telemetry by using mesh networking over 2.4GHz WiFi."
       ],
       "technologies": [
         "Arduino",
