@@ -220,6 +220,7 @@ export const query = graphql`
             cert_url
             sort_date
             show
+            end_date
           }
         }
       }

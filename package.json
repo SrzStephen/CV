@@ -8,7 +8,7 @@
     "axe-core": "^4.4.3",
     "bootstrap": "4.6",
     "cypress-axe": "^1.0.0",
-    "dayjs": "^1.11.4",
+    "dayjs": "^1.11.10",
     "gatsby": "latest",
     "gatsby-image": "latest",
     "gatsby-plugin-google-gtag": "^4.20.0",
