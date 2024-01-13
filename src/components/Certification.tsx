@@ -1,5 +1,9 @@
 import * as React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
+import dayjs from 'dayjs';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
+
+dayjs.extend(customParseFormat);
 
 export interface Props {
   title: string;
@@ -8,12 +12,15 @@ export interface Props {
   cert_url: string;
   sort_date: string;
   show: boolean;
+  end_date: null | string;
 }
 
 export const Certification = (props: Props) => (
   <li className="mb-2 position-relative">
     <OutboundLink href={props.cert_url} target="_blank" rel="noopener noreferrer" className="link-unstyled">
-      <div className="resume-award-name">{props.title}</div>
+      {props.end_date == null || dayjs(props.end_date, 'DD/MM/YYYY').isAfter(dayjs()) ?
+        (<div className="resume-award-name">{props.title}</div>) :
+        (<div className="resume-award-name"><s>{props.title}</s> (expired)</div>)}
     </OutboundLink>
     <div className="resume-award-validity">{props.validity}</div>
   </li>

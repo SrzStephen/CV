@@ -178,7 +178,7 @@ export default (props: Props) => {
       <footer className="footer text-center pt-2">
         <small className="copyright">
           Designed with <i className="fas fa-heart" /> by{' '}
-          <a href="http://themes.3rdwavemedia.com" target="_blank">
+          <a href="https://themes.3rdwavemedia.com" target="_blank">
             Xiaoying Riley
           </a>{' '}
           for developers
@@ -220,6 +220,7 @@ export const query = graphql`
             cert_url
             sort_date
             show
+            end_date
           }
         }
       }
