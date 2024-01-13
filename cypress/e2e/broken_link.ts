@@ -5,10 +5,13 @@ describe('Included links', () => {
       for (const p of sites) {
         cy.visit(p);
         cy.get('a').each(page => {
-          if (page.prop('href').startsWith('http') &&
-            !page.prop('href').contains('themes.3rdwavemedia.com')) {
-              // would prefer to keep attribution footer, the site keeps 500'ing which shows as a broken build for me
-            cy.request(page.prop('href')).should('have.property', 'status', 200);
+          if (page.prop('href').startsWith('http')) {
+            // Cypress is being weird when I try to use href instead
+            // 3rdwavemedia keeps 500ing which results in a broken build for me
+            // would prefer to keep attribution footer as is, so skip any links that has Xiaoyings name on them
+            if (!page.contents().text().includes('Xiaoying Riley')) {
+              cy.request(page.prop('href')).should('have.property', 'status', 200);
+            }
           }
         });
       }

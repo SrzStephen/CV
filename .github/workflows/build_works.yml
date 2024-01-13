@@ -30,9 +30,9 @@ jobs:
         run: npm list
 
       - name: Use Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: install npm dependencies
         run: npm ci --legacy-peer-deps
