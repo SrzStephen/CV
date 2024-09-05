@@ -29,7 +29,7 @@ export default (props: Props) => {
             location={props.data.social.nodes[0].childSocialJson.location}
             socialMedia={{
               github: props.data.social.nodes[0].childSocialJson.social.github,
-              website: props.data.social.nodes[0].childSocialJson.social.website,
+              website: props.data.social.nodes[0].childSocialJson.social.website
             }}
           />
           <div className="resume-body p-4" style={{ backgroundImage: `url(${Lines})`, overflow: 'hidden' }}>
@@ -43,14 +43,14 @@ export default (props: Props) => {
                   roles. Please be sure to provide me with the following information.
                 </p>
                 <ul className="resume-awards-list" style={{ marginLeft: '17px' }}>
-                  <li>The industry of your client (e.g. mining, health, education)</li>
-                  <li>The technologies that form their core tech stack (e.g. Python, Java, Flask, React)</li>
-                  <li>The nature of the position (contract or permanent)</li>
-                  <li>The length of contract if applicable</li>
-                  <li>The job title</li>
-                  <li> Location requirements (e.g. full-time WFH, in-office, hybrid)</li>
+                  <li>Industry of your client (e.g. mining, health, education)</li>
+                  <li>Technologies that form the clients core tech stack (e.g. Python, Java, Flask, React)</li>
+                  <li>Nature of the position (contract or permanent)</li>
+                  <li>Length of contract if applicable</li>
+                  <li>Job title</li>
+                  <li>Location requirements (e.g. full-time WFH, in-office, hybrid)</li>
                   <li>
-                    A rough salary/contract rate range inclusive of superannuation.{' '}
+                    Salary/contract rate range inclusive of superannuation.{' '}
                     <b>Please note that "Negotiable" is not a range</b>.
                   </li>
                 </ul>
@@ -95,22 +95,22 @@ export default (props: Props) => {
 };
 
 export const query = graphql`
-  query {
-    social: allFile(filter: { name: { eq: "social" } }) {
-      nodes {
-        childSocialJson {
-          email
-          name
-          phone
-          role
-          location
-          social {
-            github
-            website
-            cv
-          }
+    query {
+        social: allFile(filter: { name: { eq: "social" } }) {
+            nodes {
+                childSocialJson {
+                    email
+                    name
+                    phone
+                    role
+                    location
+                    social {
+                        github
+                        website
+                        cv
+                    }
+                }
+            }
         }
-      }
     }
-  }
 `;
