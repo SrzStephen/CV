@@ -9,7 +9,6 @@ const Lines = require('./../assets/images/backgrounds/lines.png');
 import './../templates/CV.css';
 import { getTranslatedLabel, initLocale } from '../translations/provider';
 import { Header } from '../components/Header';
-import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
 interface Props {
   location: any;
@@ -58,12 +57,12 @@ export default (props: Props) => {
                 Please note: I won't call you for a "quick chat" if you have failed to provide the above information.
                 <h2 className="resume-section-title font-weight-bold pb-3 mb-3"></h2>
                 My CV is publicly available at{' '}
-                <OutboundLink
+                <a
                   className="resume-award-name link-unstyled"
                   href={props.data.social.nodes[0].childSocialJson.social.cv}
                 >
                   {props.data.social.nodes[0].childSocialJson.social.cv.slice(8)}
-                </OutboundLink>
+                </a>
               </div>
             </section>
           </div>
