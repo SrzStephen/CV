@@ -10,7 +10,6 @@
     "cypress-axe": "^1.0.0",
     "dayjs": "^1.11.10",
     "gatsby": "^4.25.8",
-    "gatsby-build-newrelic": "^1.1.17",
     "gatsby-image": "latest",
     "gatsby-plugin-manifest": "latest",
     "gatsby-plugin-newrelic": "^2.6.0",
@@ -45,7 +44,6 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "rm -Rf public && rm -Rf .cache && gatsby build --prefix-paths",
-    "build:ci": "rm -Rf public && rm -Rf .cache && gatsby build --prefix-paths --open-tracing-config-file ./node_modules/gatsby-build-newrelic/zipkin-local.js --graphql-tracing",
     "develop": "gatsby develop",
     "predeploy": "rm -Rf public && rm -Rf .cache && npm run build",
     "prod": "gatsby serve",

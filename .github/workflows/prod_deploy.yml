@@ -29,7 +29,7 @@ jobs:
       - name: Build
         run: |
           npm ci --legacy-peer-deps
-          npm run build:ci
+          npm run build
         env:
           NEW_RELIC_ACCOUNT_ID: ${{ secrets.NEW_RELIC_ACCOUNT_ID }}
           NEW_RELIC_AGENT_ID: ${{ secrets.NEW_RELIC_ACCOUNT_ID }}
