@@ -45,7 +45,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "rm -Rf public && rm -Rf .cache && gatsby build --prefix-paths",
-    "ci-build": "rm -Rf public && rm -Rf .cache && gatsby build --prefix-paths --open-tracing-config-file ./node_modules/gatsby-build-newrelic/zipkin-local.js --graphql-tracing",
+    "build:ci": "rm -Rf public && rm -Rf .cache && gatsby build --prefix-paths --open-tracing-config-file ./node_modules/gatsby-build-newrelic/zipkin-local.js --graphql-tracing",
     "develop": "gatsby develop",
     "predeploy": "rm -Rf public && rm -Rf .cache && npm run build",
     "prod": "gatsby serve",
