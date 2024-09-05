@@ -169,12 +169,12 @@ module.exports = {
           beacon: 'bam.nr-data.net',
           errorBeacon: 'bam.nr-data.net',
           settings: {
-            distributed_tracing: { enabled: true },
+            distributed_tracing: { enabled: false },
             privacy: { cookies_enabled: true },
             ajax: { deny_list: ['bam-cell.nr-data.net'] }
           }
         }
       }
-    }
+    },
   ]
 };
