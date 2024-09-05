@@ -10,9 +10,10 @@
     "cypress-axe": "^1.0.0",
     "dayjs": "^1.11.10",
     "gatsby": "^4.25.8",
+    "gatsby-build-newrelic": "^1.1.17",
     "gatsby-image": "latest",
-    "gatsby-plugin-google-gtag": "latest",
     "gatsby-plugin-manifest": "latest",
+    "gatsby-plugin-newrelic": "^2.6.0",
     "gatsby-plugin-next-seo": "latest",
     "gatsby-plugin-sharp": "latest",
     "gatsby-plugin-sitemap": "latest",
@@ -28,10 +29,10 @@
     "react-helmet-async": "latest"
   },
   "overrides": {
-  "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
-    "react": "latest"
-  }
-},
+    "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
+      "react": "latest"
+    }
+  },
   "keywords": [
     "gatsby"
   ],
@@ -44,6 +45,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "rm -Rf public && rm -Rf .cache && gatsby build --prefix-paths",
+    "ci-build": "rm -Rf public && rm -Rf .cache && gatsby build --prefix-paths --open-tracing-config-file ./node_modules/gatsby-build-newrelic/zipkin-local.js --graphql-tracing",
     "develop": "gatsby develop",
     "predeploy": "rm -Rf public && rm -Rf .cache && npm run build",
     "prod": "gatsby serve",

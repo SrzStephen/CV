@@ -8,20 +8,20 @@ module.exports = {
   siteMetadata: {
     title: titleDesc,
     siteUrl: SITE_URL,
-    description: titleDesc,
+    description: titleDesc
   },
   plugins: [
 
     {
       resolve: 'gatsby-plugin-next-seo',
       options:
-      {
-        title: titleDesc,
-        language: 'en',
-        description: titleDesc
-      }
+        {
+          title: titleDesc,
+          language: 'en',
+          description: titleDesc
+        }
     },
-    
+
     'gatsby-plugin-typescript',
     {
       resolve: `gatsby-source-filesystem`,
@@ -100,48 +100,48 @@ module.exports = {
       options: {
         path: path.join(__dirname, `src`, `data`, 'work'),
         name: 'work'
-      },
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: path.join(__dirname, `src`, `data`, 'projects'),
         name: 'projects'
-      },
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: path.join(__dirname, `src`, `data`, 'social'),
         name: 'social'
-      },
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: path.join(__dirname, `src`, `data`, 'skills'),
         name: 'skills'
-      },
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: path.join(__dirname, `src`, `data`, 'certs'),
         name: 'certs'
-      },
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: path.join(__dirname, `src`, `data`, 'educations'),
         name: 'educations'
-      },
+      }
     },
     {
-      resolve: "gatsby-plugin-sitemap",
+      resolve: 'gatsby-plugin-sitemap',
       options: {
-        output:'/',
-        createLinkInHead:true,
+        output: '/',
+        createLinkInHead: true,
         //TODO this is being ignored by sitemap plugin
         //It's probably related to
         query: `
@@ -153,27 +153,37 @@ module.exports = {
           }
         }
       `,
-      resolveSiteUrl: () => SITE_URL,
-      },
+        resolveSiteUrl: () => SITE_URL
+      }
     },
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: 'gatsby-plugin-newrelic',
       options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          "G-N2T71SCH5X"
-        ],
-        gtagConfig: {
-          optimize_id: "OPT_CONTAINER_ID",
-          anonymize_ip: true,
-          cookie_expires: 0,
-        },
-        pluginConfig: {
-          head: true,
-          respectDNT: true,
-          exclude: ["/preview/**", "/do-not-track/me/too/"]
-        },
-      },
-    }
+        config: {
+          instrumentationType: 'proAndSPA',
+          accountId: process.env.NEW_RELIC_ACCOUNT_ID || '',
+          trustKey: process.env.NEW_RELIC_ACCOUNT_ID || '',
+          agentID: process.env.NEW_RELIC_AGENT_ID || '',
+          licenseKey: process.env.NEW_RELIC_LICENSE_KEY || '',
+          applicationID: process.env.NEW_RELIC_AGENT_ID || '',
+          beacon: 'bam.nr-data.net',
+          errorBeacon: 'bam.nr-data.net',
+          settings: {
+            distributed_tracing: { enabled: true },
+            privacy: { cookies_enabled: true },
+            ajax: { deny_list: ['bam-cell.nr-data.net'] }
+          }
+        }
+      }
+    },
+{
+  resolve: "gatsby-build-newrelic",
+      options: {
+        NR_LICENSE_KEY: process.env.NEW_RELIC_LICENSE_KEY || '',
+        NR_ACCOUNT_ID: process.env.NEW_RELIC_ACCOUNT_ID || '',
+        SITE_NAME: 'stephen.resume.engineering',
+        customTags: { gatsbySite: true }
+      }
+}
   ]
 };
