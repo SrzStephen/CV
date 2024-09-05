@@ -41,7 +41,7 @@ jobs:
         run: npm run test:ci-develop
 
       - name: Check that building works
-        run: npm run build:ci
+        run: npm run build
         env:
           NEW_RELIC_ACCOUNT_ID: ${{ secrets.NEW_RELIC_ACCOUNT_ID }}
           NEW_RELIC_AGENT_ID: ${{ secrets.NEW_RELIC_ACCOUNT_ID }}
