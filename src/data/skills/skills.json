@@ -12,13 +12,16 @@
   ],
   "tools": [
     {
-      "name": "AWS"
+      "name": "Cloud: AWS, Azure"
     },
     {
-      "name": "Jira"
+      "name": "CICD: Gitlab, Github Actions, Teamcity"
     },
     {
       "name": "Git (CLI)"
+    },
+    {
+      "name": "Jira"
     },
     {
       "name": "Linux"
