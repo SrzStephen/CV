@@ -146,7 +146,7 @@ export default (props: Props) => {
                   <div className="resume-section-content">
                     <ResumeSkillList
                       skills={props.data.skills.nodes[0].childSkillsJson.languages}
-                      title={'Languages and Frameworks'}
+                      title={'Programming Languages'}
                     />
                     <ResumeSkillList
                       skills={props.data.skills.nodes[0].childSkillsJson.tools}

@@ -11,8 +11,10 @@
       "description": "Solution that uses machine learning to improve disaster response after hurricanes/tornadoes",
       "achievements": [
         "First place in the AWS Disaster Response Hackathon.",
-        "Machine learning models to predict building footprints and to predict whether buildings in those footprints are damaged to evaluate damage after a natural disaster.",
-        "Solution was presented at the AWS RE:MARS event by AWS."
+        "An application that uses machine learning vision models to localise zones of damage to quickly figure out where support is needed post disaster.",
+        "The first model segments building foorprints from satellite imagery using a modified UNET architecture using over 150K images from the SpaceNet2 Challenge dataset and creates segmented before and after images.",
+        "The second model takes these building footprints and classifies the level of damage using a fine tuned RESNET model fine-tuned on a subset of the XView2 DataSets.",
+        "Solution was presented at the AWS RE:MARS 2022 event by AWS."
       ],
       "technologies": [
         "Rust",
@@ -23,6 +25,25 @@
       ]
     },
     {
+      "title": "(Work) Safety Dashboard",
+      "role": "",
+      "url": "https://www.bhp.com/news/case-studies/2022/09/harnessing-data-to-improve-light-vehicles-and-surface-mobile-equipment-safety-onsite",
+      "company": "BHP",
+      "from": "",
+      "to": "",
+      "location": "",
+      "description": "A published case study on work to improve operator safety in Light Vehicles and Surface Mining Equipment",
+      "achievements": [
+        "Proven, quantified reduction in reportable vehicle events.",
+        "Modular, Scalable design to support multiple combinations of systems across multiple mine sites."
+      ],
+      "technologies": [
+        "Python",
+        "Kafka",
+        "Typescript"
+      ]
+    },
+    {
       "title": "CORTX Spark Integration",
       "role": "",
       "url": "https://devpost.com/software/cortx-spark-hadoop",
@@ -30,15 +51,17 @@
       "from": "",
       "to": "",
       "location": "Online",
-      "description": "Hadoop and Spark integration using Seagates CORTX S3 compatible API",
+      "description": "Hadoop and Spark integration using the Seagate CORTX S3 compatible API",
       "achievements": [
         "Second place in the Seagate CORTX Integration Challenge.",
-        "Integration with Hadoop and Spark to use the Seagate COTRX object storage as a backend instead of HDFS.",
-        "Created an ansible script to automate the setup of the integration for a standalone single node cluster."
+        "Replaced Hadoop Distributed File System (HDFS), a common distributed data storage layer in the Hadoop ecosystem with Seagates CORTX object storage Protocol.",
+        "Demonstrated operability of this storage layer through Apache Spark - A common distributed big data analytics tool.",
+        "Created an ansible script to automate the setup of the integration for a standalone single node cluster to ensure reproducibility."
       ],
       "technologies": [
         "Ansible",
         "Hadoop",
+        "HDFS",
         "Spark"
       ]
     },
@@ -50,7 +73,7 @@
       "from": "",
       "to": "",
       "location": "",
-      "description": "Used an Azure Sphere IOT device along with Azure IOT services to create a dashboard of CO2 and Dust levels in my room",
+      "description": "Used an Azure Sphere Internet Of Things (IOT) device along with Azure IOT services to create a dashboard of Carbon Dioxide and particle levels in my room",
       "achievements": [
         "Runner up in the Azure Sensing the World competition.",
         "Wrote C code targeting the Azure Sphere IOT device (including libraries for the MHZ-19 and PMS7003 sensors).",
@@ -74,12 +97,12 @@
       "from": "",
       "to": "",
       "location": "",
-      "description": "Cloud enabled RFID lock using the Azure Sphere IOT device",
+      "description": "Cloud enabled Remote Frequency Identification (RFID) lock using the Azure Sphere Internet of Things (IOT) device",
       "achievements": [
         "One of several runner-up awards in the Secure Everything with Azure Sphere Challenge.",
         "Used Azure Sphere hardware to build an IOT enabled lock that was capable of working with and without a network connection.",
         "Allowed over the air addition of new RFID cards.",
-        "Built an Azure Web app component with Active Directory authentication to host the UI component of the application."
+        "Hosted an application on Azure Web Apps with Azure Active Directory (Entra) authentication and Authorization to perform cloud administrative actions on device using cloud to device communications."
       ],
       "technologies": [
         "Azure",
@@ -92,6 +115,7 @@
     {
       "title": "WACTF 2018 - Second Place",
       "role": "",
+      "url": "https://x.com/capture_tf",
       "company": "",
       "from": "",
       "to": "",
@@ -99,7 +123,7 @@
       "description": "WACTF is a weekend long challenge based cybersecurity competition (Capture the Flag) created and hosted by the Perth cybersecurity community.",
       "achievements": [
         "Placed second amongst 60 teams competing that weekend.",
-        "Learnt a lot during the weekend about offence and defencive security across web, exploit and cryptography challenges."
+        "Challenges included reverse engineering, offence and defencive web security, application exploitation and cryptography challenges."
       ],
       "technologies": [
         "Wireshark",
@@ -140,10 +164,9 @@
       "achievements": [
         "Built a physics based simulator of rocks tipping from a dump truck to calculate the impact of rock fragmentation on blockages in a primary crusher chute.",
         "The simulator generated rocks along a rock fragmentation probability distribution function which is generated by a set of blasting inputs.",
-        "These rocks would then be tipped into a modelled primary crusher chute and using descrete element analysis over a small set of time jumps, modelled the final resting places of the rocks.",
-        "Running this simulation 100s of times we had a monte carlo probability of a rock bridge being generated, and the size of that rock bridge.",
-        "Finally, the probabilities were used to generate an estimated outage cost for each set of blasting parameters, which allowed for optimisation against cost of explosives to increase rock fragmentation."
-      ],
+        "These rocks would then be tipped into a modelled primary crusher chute and using discrete element analysis over a small set of time jumps, modelled the final resting places of the rocks.",
+        "By running this simulation hundreds of times, we were able to generate a monte carlo probability of a rock bridge being generated and the size of that rock bridge for each set of blasting parameters",
+        "These probabilities were then used to generate a cost model showing an optimal cost point for a finer fragmentation (higher explosive costs) with the associated cost benefit of reduced rock bridges."],
       "technologies": [
         "Unity",
         "C#",
@@ -151,7 +174,7 @@
       ]
     },
     {
-      "title": "Steel Ballers",
+      "title": "Unleashing SAG2",
       "role": "",
       "url": "https://unearthed.solutions/news/perths-brightest-minds-unearth-mine-solutions-nickel-west",
       "company": "",
