@@ -4,10 +4,9 @@ Curriculum Vitae with [gatsbyJS](https://www.gatsbyjs.org/) a static page genera
 
 ## Motivation
 
-- I dislike centralisation that has cause LinkedIn to become a dominant platform for an online "work" identity
-
-- I agree that there is some utility in having my work history, projects and certifications publicly available
-
+- LinkedIn has effectively become a monopoply/monopsony for your "work" identity and giving a single platform
+this much power may not be a good idea in the long run.
+- There is significant utility to having a single publicly available place with my work history, project and certification
 - I wanted to apply some React knowledge that I learnt doing [A Udemy course](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
 and modifying a gatsby CV that [firsttris created](https://github.com/firsttris/gatsby-cv)
 to meet my needs seemed like a good opportunity to try this out in an existing code base.
