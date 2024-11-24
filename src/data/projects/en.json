@@ -32,10 +32,10 @@
       "from": "",
       "to": "",
       "location": "",
-      "description": "A published case study on work to improve operator safety in Light Vehicles and Surface Mining Equipment",
+      "description": "A published case study on work to improve operator safety in light vehicles and surface mining equipment",
       "achievements": [
         "Proven, quantified reduction in reportable vehicle events.",
-        "Modular, Scalable design to support multiple combinations of systems across multiple mine sites."
+        "Modular, scalable design to support multiple combinations of systems across multiple mine sites."
       ],
       "technologies": [
         "Python",
@@ -102,7 +102,7 @@
         "One of several runner-up awards in the Secure Everything with Azure Sphere Challenge.",
         "Used Azure Sphere hardware to build an IOT enabled lock that was capable of working with and without a network connection.",
         "Allowed over the air addition of new RFID cards.",
-        "Hosted an application on Azure Web Apps with Azure Active Directory (Entra) authentication and Authorization to perform cloud administrative actions on device using cloud to device communications."
+        "Hosted an application on Azure Web Apps with Azure Active Directory (Entra) authentication and Authorization to perform device administrative actions via cloud to device communications."
       ],
       "technologies": [
         "Azure",
