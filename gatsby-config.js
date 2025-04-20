@@ -8,27 +8,16 @@ module.exports = {
   siteMetadata: {
     title: titleDesc,
     siteUrl: SITE_URL,
-    description: titleDesc
+    description: titleDesc,
   },
   plugins: [
-
-    {
-      resolve: 'gatsby-plugin-next-seo',
-      options:
-        {
-          title: titleDesc,
-          language: 'en',
-          description: titleDesc
-        }
-    },
-
     'gatsby-plugin-typescript',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: path.join(__dirname, `src`, `assets`, `images`)
-      }
+        path: path.join(__dirname, `src`, `assets`, `images`),
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -46,96 +35,99 @@ module.exports = {
           {
             src: 'favicons/icon-48x48.png',
             sizes: '48x48',
-            type: 'image/png'
+            type: 'image/png',
           },
           {
             src: 'favicons/icon-72x72.png',
             sizes: '72x72',
-            type: 'image/png'
+            type: 'image/png',
           },
           {
             src: 'favicons/icon-96x96.png',
             sizes: '96x96',
-            type: 'image/png'
+            type: 'image/png',
           },
           {
             src: 'favicons/icon-144x144.png',
             sizes: '144x144',
-            type: 'image/png'
+            type: 'image/png',
           },
           {
             src: 'favicons/icon-192x192.png',
             sizes: '192x192',
-            type: 'image/png'
+            type: 'image/png',
           },
           {
             src: 'favicons/icon-256x256.png',
             sizes: '256x256',
-            type: 'image/png'
+            type: 'image/png',
           },
           {
             src: 'favicons/icon-384x384.png',
             sizes: '384x384',
-            type: 'image/png'
+            type: 'image/png',
           },
           {
             src: 'favicons/icon-512x512.png',
             sizes: '512x512',
-            type: 'image/png'
-          }
-        ]
-      }
+            type: 'image/png',
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: path.join(__dirname, `src`, `markdown-pages`),
-        name: `markdown-pages`
-      }
+        name: `markdown-pages`,
+      },
     },
-    `gatsby-transformer-remark`,
     `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {},
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: path.join(__dirname, `src`, `data`, 'work'),
-        name: 'work'
-      }
+        name: 'work',
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: path.join(__dirname, `src`, `data`, 'projects'),
-        name: 'projects'
-      }
+        name: 'projects',
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: path.join(__dirname, `src`, `data`, 'social'),
-        name: 'social'
-      }
+        name: 'social',
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: path.join(__dirname, `src`, `data`, 'skills'),
-        name: 'skills'
-      }
+        name: 'skills',
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: path.join(__dirname, `src`, `data`, 'certs'),
-        name: 'certs'
-      }
+        name: 'certs',
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: path.join(__dirname, `src`, `data`, 'educations'),
-        name: 'educations'
-      }
+        name: 'educations',
+      },
     },
     {
       resolve: 'gatsby-plugin-sitemap',
@@ -153,8 +145,8 @@ module.exports = {
           }
         }
       `,
-        resolveSiteUrl: () => SITE_URL
-      }
+        resolveSiteUrl: () => SITE_URL,
+      },
     },
     {
       resolve: 'gatsby-plugin-newrelic',
@@ -171,10 +163,10 @@ module.exports = {
           settings: {
             distributed_tracing: { enabled: true },
             privacy: { cookies_enabled: true },
-            ajax: { deny_list: ['bam-cell.nr-data.net'] }
+            ajax: { deny_list: ['bam.nr-data.net'] }
           }
         }
       }
     }
-  ]
+  ],
 };
