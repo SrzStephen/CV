@@ -9,6 +9,7 @@ module.exports = {
     title: titleDesc,
     siteUrl: SITE_URL,
     description: titleDesc,
+    image: '/src/assets/images/favicon.png',
   },
   plugins: [
     'gatsby-plugin-typescript',
