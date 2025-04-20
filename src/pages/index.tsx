@@ -3,6 +3,8 @@ import { navigate } from 'gatsby';
 import * as React from 'react';
 import './../assets/fontawesome/css/all.css';
 import { JSX } from 'react';
+import { SEO } from "../components/Seo"
+
 export default (): JSX.Element => {
   if (typeof window !== 'undefined') {
     let locale = 'en';
@@ -15,3 +17,6 @@ export default (): JSX.Element => {
     </div>
   );
 };
+export const Head = () => (
+  <SEO />
+)
