@@ -32,7 +32,12 @@ describe("Button related checks", () => {
         checkdata("/en/work", projects, false)
         checkdata("/en/projects", projects, true)
     })
-    // # TODO make this better
+  it("Check recruiter page", () => {
+    cy.request("/recruiter").should('have.property', 'status', 200);
+
+  });
+
+  // # TODO make this better
     // it("Check Projects Button", () => {
     //     cy.visit("/en/work")
     //     cy.get('input').last().check({force: true}).wait(5000).url().should('contain', 'projects')
