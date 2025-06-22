@@ -32,8 +32,8 @@ jobs:
           npm run build
         env:
           NEW_RELIC_ACCOUNT_ID: ${{ secrets.NEW_RELIC_ACCOUNT_ID }}
-          NEW_RELIC_AGENT_ID: ${{ secrets.NEW_RELIC_ACCOUNT_ID }}
-          NEW_RELIC_LICENSE_KEY: ${{ secrets.NEW_RELIC_ACCOUNT_ID }}
+          NEW_RELIC_AGENT_ID: ${{ secrets.NEW_RELIC_AGENT_ID }}
+          NEW_RELIC_LICENSE_KEY: ${{ secrets.NEW_RELIC_LICENSE_KEY }}
 
       - name: Setup Pages
         id: pages
