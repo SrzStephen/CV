@@ -1,0 +1,176 @@
+---
+kind: projects
+locale: en
+projects:
+  - title: DisaVu
+    role: ""
+    url: https://devpost.com/software/disavu
+    company: ""
+    from: ""
+    to: ""
+    location: Online
+    description: Solution that uses machine learning to improve disaster response after hurricanes/tornadoes
+    achievements:
+      - First place in the AWS Disaster Response Hackathon.
+      - An application that uses machine learning vision models to localise zones of damage to quickly figure out where support is needed post disaster.
+      - The first model segments building foorprints from satellite imagery using a modified UNET architecture using over 150K images from the SpaceNet2 Challenge dataset and creates segmented before and after images.
+      - The second model takes these building footprints and classifies the level of damage using a fine tuned RESNET model fine-tuned on a subset of the XView2 DataSets.
+      - Solution was presented at the AWS RE:MARS 2022 event by AWS.
+    technologies:
+      - Rust
+      - Python
+      - Pytorch
+      - AWS
+      - GIS
+  - title: "(Work) Safety Dashboard"
+    role: ""
+    url: https://www.bhp.com/news/case-studies/2022/09/harnessing-data-to-improve-light-vehicles-and-surface-mobile-equipment-safety-onsite
+    company: BHP
+    from: ""
+    to: ""
+    location: ""
+    description: A published case study on work to improve operator safety in light vehicles and surface mining equipment
+    achievements:
+      - Proven, quantified reduction in reportable vehicle events.
+      - Modular, scalable design to support multiple combinations of systems across multiple mine sites.
+    technologies:
+      - Python
+      - Kafka
+      - Typescript
+  - title: CORTX Spark Integration
+    role: ""
+    url: https://devpost.com/software/cortx-spark-hadoop
+    company: ""
+    from: ""
+    to: ""
+    location: Online
+    description: Hadoop and Spark integration using the Seagate CORTX S3 compatible API
+    achievements:
+      - Second place in the Seagate CORTX Integration Challenge.
+      - Replaced Hadoop Distributed File System (HDFS), a common distributed data storage layer in the Hadoop ecosystem with Seagates CORTX object storage Protocol.
+      - Demonstrated operability of this storage layer through Apache Spark - A common distributed big data analytics tool.
+      - Created an ansible script to automate the setup of the integration for a standalone single node cluster to ensure reproducibility.
+    technologies:
+      - Ansible
+      - Hadoop
+      - HDFS
+      - Spark
+  - title: Sensing the air quality in my room
+    role: ""
+    url: https://community.element14.com/products/devtools/avnetboardscommunity/azure-sphere-starter-kits/b/blog/posts/project-sensing-the-air-quality-in-my-room-co2-dust
+    company: ""
+    from: ""
+    to: ""
+    location: ""
+    description: Used an Azure Sphere Internet Of Things (IOT) device along with Azure IOT services to create a dashboard of Carbon Dioxide and particle levels in my room
+    achievements:
+      - Runner up in the Azure Sensing the World competition.
+      - Wrote C code targeting the Azure Sphere IOT device (including libraries for the MHZ-19 and PMS7003 sensors).
+      - Used Azure IOT for transport of device to cloud messages.
+      - Implemented Azure Direct Methods on the Azure Sphere to modify the devices mutable state via cloud to device messages.
+    technologies:
+      - Azure
+      - IOT
+      - C
+      - Grafana
+      - Python
+      - SQL
+  - title: Lock and Load
+    role: ""
+    url: https://www.hackster.io/lock-and-load/azure-sphere-iot-enabled-rfid-lock-e73f70
+    company: ""
+    from: ""
+    to: ""
+    location: ""
+    description: Cloud enabled Remote Frequency Identification (RFID) lock using the Azure Sphere Internet of Things (IOT) device
+    achievements:
+      - One of several runner-up awards in the Secure Everything with Azure Sphere Challenge.
+      - Used Azure Sphere hardware to build an IOT enabled lock that was capable of working with and without a network connection.
+      - Allowed over the air addition of new RFID cards.
+      - Hosted an application on Azure Web Apps with Azure Active Directory (Entra) authentication and Authorization to perform device administrative actions via cloud to device communications.
+    technologies:
+      - Azure
+      - IOT
+      - C
+      - C#
+      - Python
+  - title: WACTF 2018 - Second Place
+    role: ""
+    url: https://x.com/capture_tf
+    company: ""
+    from: ""
+    to: ""
+    location: Perth
+    description: WACTF is a weekend long challenge based cybersecurity competition (Capture the Flag) created and hosted by the Perth cybersecurity community.
+    achievements:
+      - Placed second amongst 60 teams competing that weekend.
+      - Challenges included reverse engineering, offence and defencive web security, application exploitation and cryptography challenges.
+    technologies:
+      - Wireshark
+      - Python
+      - Linux
+  - title: "NASA Spaceapps - Supergiant Scuti "
+    role: ""
+    url: https://2018.spaceappschallenge.org/challenges/what-world-needs-now/globe-observer/teams/supergiant-scuti/project/
+    company: ""
+    from: ""
+    to: ""
+    location: ""
+    description: AR/VR data exploration and visualisation
+    achievements:
+      - One of four finalists for the Best Use of Hardware Award.
+      - Used Unity to build an AR/VR data visualisation solutions to be used in classrooms.
+    technologies:
+      - Unity
+      - C#
+      - Virtual Reality
+      - Augmented Reality
+      - Vuforia
+  - title: Monte Rocks
+    role: ""
+    url: https://unearthed.solutions/news/global-crowd-creates-diverse-solutions-crush-newcrests-rock-bridges-challenge
+    company: ""
+    from: ""
+    to: ""
+    location: ""
+    description: Created a physics based monte carlo simulator to minimise rock bridges
+    achievements:
+      - Built a physics based simulator of rocks tipping from a dump truck to calculate the impact of rock fragmentation on blockages in a primary crusher chute.
+      - The simulator generated rocks along a rock fragmentation probability distribution function which is generated by a set of blasting inputs.
+      - These rocks would then be tipped into a modelled primary crusher chute and using discrete element analysis over a small set of time jumps, modelled the final resting places of the rocks.
+      - By running this simulation hundreds of times, we were able to generate a monte carlo probability of a rock bridge being generated and the size of that rock bridge for each set of blasting parameters
+      - These probabilities were then used to generate a cost model showing an optimal cost point for a finer fragmentation (higher explosive costs) with the associated cost benefit of reduced rock bridges.
+    technologies:
+      - Unity
+      - C#
+      - Rust
+  - title: Unleashing SAG2
+    role: ""
+    url: https://unearthed.solutions/news/perths-brightest-minds-unearth-mine-solutions-nickel-west
+    company: ""
+    from: ""
+    to: ""
+    location: ""
+    description: Machine Learning production optimisation.
+    achievements:
+      - Built a digital twin of a grinding circuit.
+      - Used a genetic algorithm to provide recommendations to operators for settings that may optimise the grinder for a given set of inputs.
+    technologies:
+      - Python
+      - Scikit-learn
+  - title: KLOG - IOT Safety Device
+    role: ""
+    url: https://unearthed.solutions/u/innovators/stephen-mott
+    company: ""
+    from: ""
+    to: ""
+    location: ""
+    description: Mesh networked IOT safety device using the B.A.T.M.A.N mesh networking protocol.
+    achievements:
+      - First place in the BHP/Unearthed Digital Tribes Hackathon.
+      - Built an IOT device to improve safety in mine sites with limited telemetry by using mesh networking over 2.4GHz WiFi.
+    technologies:
+      - Arduino
+      - C++
+      - Python
+---

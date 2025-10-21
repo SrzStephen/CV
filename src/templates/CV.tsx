@@ -73,14 +73,14 @@ export default (props: Props) => {
       <article className="resume-wrapper text-center position-relative">
         <div className="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
           <Header
-            role={props.data.social.nodes[0].childSocialJson.role}
-            name={props.data.social.nodes[0].childSocialJson.name}
-            phone={props.data.social.nodes[0].childSocialJson.phone}
-            email={props.data.social.nodes[0].childSocialJson.email}
-            location={props.data.social.nodes[0].childSocialJson.location}
+            role={props.data.social.nodes[0].frontmatter.role}
+            name={props.data.social.nodes[0].frontmatter.name}
+            phone={props.data.social.nodes[0].frontmatter.phone}
+            email={props.data.social.nodes[0].frontmatter.email}
+            location={props.data.social.nodes[0].frontmatter.location}
             socialMedia={{
-              github: props.data.social.nodes[0].childSocialJson.social.github,
-              website: props.data.social.nodes[0].childSocialJson.social.website,
+              github: props.data.social.nodes[0].frontmatter.social.github,
+              website: props.data.social.nodes[0].frontmatter.social.website,
             }}
           />
           <div className="resume-body p-4" style={{ backgroundImage: `url(${Lines})`, overflow: 'hidden' }}>
@@ -106,7 +106,7 @@ export default (props: Props) => {
                   <section className="resume-section experience-section mb-5">
                     <div className="resume-section-content">
                       <div className="resume-timeline position-relative">
-                        {props.data.work.nodes[0].childWorkJson.projects.map((project: ProjectProps, index: number) => (
+                        {props.data.work.nodes[0].frontmatter.projects.map((project: ProjectProps, index: number) => (
                           <Project key={index} {...project} />
                         ))}
                       </div>
@@ -117,7 +117,7 @@ export default (props: Props) => {
                   <section className="resume-section experience-section mb-5">
                     <div className="resume-section-content">
                       <div className="resume-timeline position-relative">
-                        {props.data.projects.nodes[0].childProjectsJson.projects.map(
+                        {props.data.projects.nodes[0].frontmatter.projects.map(
                           (project: ProjectProps, index: number) => (
                             <Project key={index} {...project} />
                           )
@@ -145,11 +145,11 @@ export default (props: Props) => {
                   </h2>
                   <div className="resume-section-content">
                     <ResumeSkillList
-                      skills={props.data.skills.nodes[0].childSkillsJson.languages}
+                      skills={props.data.skills.nodes[0].frontmatter.languages}
                       title={'Programming Languages'}
                     />
                     <ResumeSkillList
-                      skills={props.data.skills.nodes[0].childSkillsJson.tools}
+                      skills={props.data.skills.nodes[0].frontmatter.tools}
                       title={'Tools and Platforms'}
                     />
                   </div>
@@ -159,7 +159,7 @@ export default (props: Props) => {
                     {getTranslatedLabel('EDUCATION')}
                   </h2>
                   <div className="resume-section-content">
-                    <EducationList educations={props.data.educations.nodes[0].childEducationsJson.educations} />
+                    <EducationList educations={props.data.educations.nodes[0].frontmatter.educations} />
                   </div>
                 </section>
                 <section className="resume-section reference-section mb-5">
@@ -167,7 +167,7 @@ export default (props: Props) => {
                     {getTranslatedLabel('CERTIFICATIONS')}
                   </h2>
                   <div className="resume-section-content">
-                    <CertificationList certifications={props.data.certs.nodes[0].childCertsJson.certs} />
+                    <CertificationList certifications={props.data.certs.nodes[0].frontmatter.certs} />
                   </div>
                 </section>
               </div>
@@ -210,9 +210,9 @@ export const query = graphql`
         name
       }
     }
-    certs: allFile(filter: { name: { eq: $locale }, sourceInstanceName: { eq: "certs" } }) {
+    certs: allMdx(filter: { frontmatter: { kind: { eq: "certs" }, locale: { eq: $locale } } }) {
       nodes {
-        childCertsJson {
+        frontmatter {
           certs {
             title
             validity
@@ -225,11 +225,9 @@ export const query = graphql`
         }
       }
     }
-    projects: allFile(filter: { name: { eq: $locale }, sourceInstanceName: { eq: "projects" } }) {
+    projects: allMdx(filter: { frontmatter: { kind: { eq: "projects" }, locale: { eq: $locale } } }) {
       nodes {
-        name
-        childProjectsJson {
-          id
+        frontmatter {
           projects {
             title
             company
@@ -245,11 +243,9 @@ export const query = graphql`
         }
       }
     }
-    work: allFile(filter: { name: { eq: $locale }, sourceInstanceName: { eq: "work" } }) {
+    work: allMdx(filter: { frontmatter: { kind: { eq: "work" }, locale: { eq: $locale } } }) {
       nodes {
-        name
-        childWorkJson {
-          id
+        frontmatter {
           projects {
             title
             company
@@ -264,10 +260,9 @@ export const query = graphql`
         }
       }
     }
-    skills: allFile(filter: { name: { eq: "skills" } }) {
+    skills: allMdx(filter: { frontmatter: { kind: { eq: "skills" } } }) {
       nodes {
-        name
-        childSkillsJson {
+        frontmatter {
           languages {
             name
           }
@@ -277,9 +272,9 @@ export const query = graphql`
         }
       }
     }
-    social: allFile(filter: { name: { eq: "social" } }) {
+    social: allMdx(filter: { frontmatter: { kind: { eq: "social" } } }) {
       nodes {
-        childSocialJson {
+        frontmatter {
           email
           name
           phone
@@ -292,10 +287,9 @@ export const query = graphql`
         }
       }
     }
-    educations: allFile(filter: { name: { eq: $locale }, sourceInstanceName: { eq: "educations" } }) {
+    educations: allMdx(filter: { frontmatter: { kind: { eq: "educations" }, locale: { eq: $locale } } }) {
       nodes {
-        childEducationsJson {
-          id
+        frontmatter {
           educations {
             from
             title
