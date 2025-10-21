@@ -1,11 +1,33 @@
 {
   "projects": [
+     {
+      "title": "Technical Supervisor",
+      "role": "",
+      "company": "BHP",
+      "from": "07/2025",
+      "to": "Current",
+      "location": "Western Australia",
+      "description": "",
+      "achievements": [
+        "Took up a people leadership role with a team of 8",
+        "Worked on optimisation and Automation problems within the inbound supply chain, with a focus on issues affecting maintenance",
+        "70% time split between project work, 30% people leadership / minor improvement projects"
+      ],
+      "technologies": [
+        "Python",
+        "AWS",
+        "Sagemaker",
+        "GitLab CICD",
+        "Snowflake",
+        "Terraform"
+      ]
+    },
       {
       "title": "Principal Full Stack Developer",
       "role": "",
       "company": "BHP",
       "from": "01/2024",
-      "to": "Current",
+      "to": "07/2025",
       "location": "Western Australia",
       "description": "",
       "achievements": [
