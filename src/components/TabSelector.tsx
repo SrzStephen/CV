@@ -19,7 +19,7 @@ export const TabSelector = (props: Props) => (
       <span key={index} onClick={() => props.onClick(index)}>
         <input type="radio" name="tabs" checked={item.checked} onChange={() => {}} />
         <label style={{ width: '50%' }}>
-          <i className={`mr-2 ${item.icon}`} /> <span className="	d-none d-md-block">{item.name}</span>
+          <i className={`me-2 ${item.icon}`} /> <span className="	d-none d-md-block">{item.name}</span>
         </label>
       </span>
     ))}

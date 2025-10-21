@@ -24,18 +24,18 @@ export const Header = (props: Props) => (
           <div className="title mb-3">{props.role}</div>
           <ul className="list-unstyled">
             <li className="mb-2">
-              <i className="fa fa-map-marker fa-fw mr-2" data-fa-transform="grow-3" />
+              <i className="fa fa-map-marker fa-fw me-2" data-fa-transform="grow-3" />
               {props.location}
             </li>
             <li className="mb-2">
               <a href={`mailto:${props.email}`} className="link-unstyled">
-                <i className="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3" />
+                <i className="far fa-envelope fa-fw me-2" data-fa-transform="grow-3" />
                 {props.email}
               </a>
             </li>
             <li>
               <a href={`tel:${props.phone}`} className="link-unstyled">
-                <i className="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-3" />
+                <i className="fas fa-mobile-alt fa-fw me-2" data-fa-transform="grow-3" />
                 {props.phone}
               </a>
             </li>

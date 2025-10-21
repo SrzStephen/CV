@@ -20,7 +20,7 @@ export default (props: Props) => {
   return (
     <div className="container" style={{ userSelect: 'none' }}>
       <article className="resume-wrapper text-center position-relative">
-        <div className="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
+        <div className="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
           <Header
             role={props.data.social.nodes[0].childSocialJson.role}
             name={props.data.social.nodes[0].childSocialJson.name}
@@ -34,7 +34,7 @@ export default (props: Props) => {
           />
           <div className="resume-body p-4" style={{ backgroundImage: `url(${Lines})`, overflow: 'hidden' }}>
             <section className="resume-section summary-section mb-5">
-              <h2 className="resume-section-title font-weight-bold pb-3 mb-3"></h2>
+              <h2 className="resume-section-title fw-bold pb-3 mb-3"></h2>
               <div className="resume-position-title-no-link mb-1">
                 <p>
                   Hi! Thanks for reaching out.
@@ -55,7 +55,7 @@ export default (props: Props) => {
                   </li>
                 </ul>
                 Please note: I won't call you for a "quick chat" if you have failed to provide the above information.
-                <h2 className="resume-section-title font-weight-bold pb-3 mb-3"></h2>
+                <h2 className="resume-section-title fw-bold pb-3 mb-3"></h2>
                 My CV is publicly available at{' '}
                 <a
                   className="resume-award-name link-unstyled"

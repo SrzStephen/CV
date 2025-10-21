@@ -7,7 +7,7 @@ interface Props {
 
 export const AchievementList = (props: Props) => (
   <div>
-    <h4 className="resume-timeline-item-desc-heading font-weight-bold">{getTranslatedLabel('ACHIEVEMENTS')}</h4>
+    <h4 className="resume-timeline-item-desc-heading fw-bold">{getTranslatedLabel('ACHIEVEMENTS')}</h4>
     <ul style={{ marginLeft: '17px' }}>
       {props.achievements.map((task: string, index: number) => (
         <li key={index}>{task}</li>
