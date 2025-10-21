@@ -7,25 +7,20 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "dayjs": "^1.11.10",
-    "gatsby": "^5.14.3",
+    "gatsby": "^5.15.0",
     "gatsby-image": "latest",
     "gatsby-plugin-manifest": "latest",
     "gatsby-plugin-mdx": "latest",
-    "gatsby-plugin-newrelic": "^2.7.0",
+    "gatsby-plugin-newrelic": "^2.9.0",
     "gatsby-plugin-sharp": "latest",
     "gatsby-plugin-sitemap": "latest",
     "gatsby-plugin-typescript": "latest",
     "gatsby-source-filesystem": "latest",
-    "gatsby-transformer-remark": "^6.14.0",
+    "gatsby-transformer-remark": "^6.15.0",
     "gatsby-transformer-sharp": "latest",
     "html-to-react": "latest",
     "prettier": "^2.7.1",
     "react-helmet-async": "latest"
-  },
-  "overrides": {
-    "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
-      "react": "latest"
-    }
   },
   "keywords": [
     "gatsby"
@@ -53,13 +48,13 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "axe-core": "^4.10.3",
+    "axe-core": "^4.11.0",
     "classnames": "latest",
-    "cypress": "^14.3.1",
-    "cypress-axe": "^1.6.0",
+    "cypress": "^15.5.0",
+    "cypress-axe": "^1.7.0",
     "eslint": "latest",
     "eslint-plugin-react": "latest",
-    "start-server-and-test": "^2.0.11",
+    "start-server-and-test": "^2.1.2",
     "typescript": "latest",
     "uuid": "latest"
   }
