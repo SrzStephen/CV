@@ -9,12 +9,12 @@ export interface Props {
 
 export const TechnologyList = (props: Props) => (
   <div>
-    <h4 className="resume-timeline-item-desc-heading font-weight-bold">{getTranslatedLabel('TECHNOLOGY_USED')}</h4>
+    <h4 className="resume-timeline-item-desc-heading fw-bold">{getTranslatedLabel('TECHNOLOGY_USED')}</h4>
     <ul className="list-inline">
       {props.technologies.map((tech: string, index: number) => (
         <li className="list-inline-item" key={index}>
           <span
-            className="badge badge-secondary badge-pill"
+            className="badge rounded-pill text-bg-secondary"
             style={{ backgroundImage: `url(${Paper})`, fontWeight: 'normal' }}
           >
             {tech}

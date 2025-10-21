@@ -71,7 +71,7 @@ export default (props: Props) => {
   return (
     <div className="container" style={{ userSelect: 'none' }}>
       <article className="resume-wrapper text-center position-relative">
-        <div className="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
+        <div className="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
           <Header
             role={props.data.social.nodes[0].childSocialJson.role}
             name={props.data.social.nodes[0].childSocialJson.name}
@@ -85,7 +85,7 @@ export default (props: Props) => {
           />
           <div className="resume-body p-4" style={{ backgroundImage: `url(${Lines})`, overflow: 'hidden' }}>
             <section className="resume-section summary-section mb-5">
-              <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+              <h2 className="resume-section-title text-uppercase fw-bold pb-3 mb-3">
                 {getTranslatedLabel('CAREER_SUMMARY')}
               </h2>
               <div className="resume-section-content">{htmlToReactParser.parse(props.data.summary.html)}</div>
@@ -140,7 +140,7 @@ export default (props: Props) => {
               </div>
               <div className="col-lg-3" style={{ marginTop: '40px' }}>
                 <section className="resume-section skills-section mb-5">
-                  <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+                  <h2 className="resume-section-title text-uppercase fw-bold pb-3 mb-3">
                     {getTranslatedLabel('SKILLS')}
                   </h2>
                   <div className="resume-section-content">
@@ -155,7 +155,7 @@ export default (props: Props) => {
                   </div>
                 </section>
                 <section className="resume-section education-section mb-5">
-                  <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+                  <h2 className="resume-section-title text-uppercase fw-bold pb-3 mb-3">
                     {getTranslatedLabel('EDUCATION')}
                   </h2>
                   <div className="resume-section-content">
@@ -163,7 +163,7 @@ export default (props: Props) => {
                   </div>
                 </section>
                 <section className="resume-section reference-section mb-5">
-                  <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+                  <h2 className="resume-section-title text-uppercase fw-bold pb-3 mb-3">
                     {getTranslatedLabel('CERTIFICATIONS')}
                   </h2>
                   <div className="resume-section-content">

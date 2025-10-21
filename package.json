@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Stephen Mott <Stephen@{lastname}.email>",
   "dependencies": {
-    "bootstrap": "^4.6.2",
+    "bootstrap": "^5.3.3",
     "dayjs": "^1.11.10",
     "gatsby": "^5.14.3",
     "gatsby-image": "latest",

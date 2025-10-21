@@ -9,7 +9,7 @@ export interface Props {
 
 export const Education = (props: Props) => (
   <li className="mb-2">
-    <div className="resume-degree font-weight-bold">{props.title}</div>
+    <div className="resume-degree fw-bold">{props.title}</div>
     <div className="resume-degree-org">{props.uni}</div>
     <div className="resume-degree-time">
       {props.from} - {props.to}
