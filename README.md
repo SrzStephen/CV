@@ -29,7 +29,7 @@ as the design that he based his on.
 
 Based on best practices of [gatsbyJS](https://www.gatsbyjs.org/)
 
-- src/data/ - JSON Files
+- src/data/ - MDX Files for main content
 - src/markdown-pages/ - Markdown Files
 - src/templates - Templates (main source for generation)
 - src/components - Components

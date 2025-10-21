@@ -14,6 +14,12 @@ module.exports = {
   plugins: [
     'gatsby-plugin-typescript',
     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -25,7 +31,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Tristan Teufel CV`,
+        name: `Stephen Mott CV`,
         short_name: `CV`,
         start_url: `/`,
         background_color: `#f7f0eb`,
@@ -83,7 +89,6 @@ module.exports = {
         name: `markdown-pages`,
       },
     },
-    `gatsby-transformer-json`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {},
@@ -135,8 +140,6 @@ module.exports = {
       options: {
         output: '/',
         createLinkInHead: true,
-        //TODO this is being ignored by sitemap plugin
-        //It's probably related to
         query: `
         query MyQuery {
           allSitePage {
@@ -164,10 +167,10 @@ module.exports = {
           settings: {
             distributed_tracing: { enabled: true },
             privacy: { cookies_enabled: true },
-            ajax: { deny_list: ['bam.nr-data.net'] }
-          }
-        }
-      }
-    }
+            ajax: { deny_list: ['bam.nr-data.net'] },
+          },
+        },
+      },
+    },
   ],
 };
