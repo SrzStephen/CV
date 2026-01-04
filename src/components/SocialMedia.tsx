@@ -7,7 +7,7 @@ export interface Props {
 }
 
 export const SocialMedia = (props: Props) => (
-  <div className="secondary-info ml-md-auto mt-2">
+  <div className="secondary-info ms-md-auto mt-2">
     <ul className="list-unstyled">
       <li className="mb-2">
         <a
@@ -16,7 +16,7 @@ export const SocialMedia = (props: Props) => (
           rel="noopener noreferrer"
           className="link-unstyled"
         >
-          <span className="fa-container text-center mr-2">
+          <span className="fa-container text-center me-2">
             <i className="fab fa-github fa-fw" />
           </span>
           {props.github}

@@ -20,21 +20,21 @@ export default (props: Props) => {
   return (
     <div className="container" style={{ userSelect: 'none' }}>
       <article className="resume-wrapper text-center position-relative">
-        <div className="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
+        <div className="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
           <Header
-            role={props.data.social.nodes[0].childSocialJson.role}
-            name={props.data.social.nodes[0].childSocialJson.name}
-            phone={props.data.social.nodes[0].childSocialJson.phone}
-            email={props.data.social.nodes[0].childSocialJson.email}
-            location={props.data.social.nodes[0].childSocialJson.location}
+            role={props.data.social.nodes[0].frontmatter.role}
+            name={props.data.social.nodes[0].frontmatter.name}
+            phone={props.data.social.nodes[0].frontmatter.phone}
+            email={props.data.social.nodes[0].frontmatter.email}
+            location={props.data.social.nodes[0].frontmatter.location}
             socialMedia={{
-              github: props.data.social.nodes[0].childSocialJson.social.github,
-              website: props.data.social.nodes[0].childSocialJson.social.website
+              github: props.data.social.nodes[0].frontmatter.social.github,
+              website: props.data.social.nodes[0].frontmatter.social.website
             }}
           />
           <div className="resume-body p-4" style={{ backgroundImage: `url(${Lines})`, overflow: 'hidden' }}>
             <section className="resume-section summary-section mb-5">
-              <h2 className="resume-section-title font-weight-bold pb-3 mb-3"></h2>
+              <h2 className="resume-section-title fw-bold pb-3 mb-3"></h2>
               <div className="resume-position-title-no-link mb-1">
                 <p>
                   Hi! Thanks for reaching out.
@@ -55,13 +55,13 @@ export default (props: Props) => {
                   </li>
                 </ul>
                 Please note: I won't call you for a "quick chat" if you have failed to provide the above information.
-                <h2 className="resume-section-title font-weight-bold pb-3 mb-3"></h2>
+                <h2 className="resume-section-title fw-bold pb-3 mb-3"></h2>
                 My CV is publicly available at{' '}
                 <a
                   className="resume-award-name link-unstyled"
-                  href={props.data.social.nodes[0].childSocialJson.social.cv}
+                  href={props.data.social.nodes[0].frontmatter.social.cv}
                 >
-                  {props.data.social.nodes[0].childSocialJson.social.cv.slice(8)}
+                  {props.data.social.nodes[0].frontmatter.social.cv.slice(8)}
                 </a>
               </div>
             </section>
@@ -96,9 +96,9 @@ export default (props: Props) => {
 
 export const query = graphql`
     query {
-        social: allFile(filter: { name: { eq: "social" } }) {
+        social: allMdx(filter: { frontmatter: { kind: { eq: "social" } } }) {
             nodes {
-                childSocialJson {
+                frontmatter {
                     email
                     name
                     phone

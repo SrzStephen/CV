@@ -21,13 +21,13 @@ export const Project = (props: Props) => (
     <div className="resume-timeline-item-header mb-2">
       <div className="d-flex flex-column flex-md-row">
         {props.url ? (
-          <a href={props.url} className="resume-position-title font-weight-bold mb-1 link-unstyled ">
+          <a href={props.url} className="resume-position-title fw-bold mb-1 link-unstyled ">
             {props.title} <i className="fa fa-link"></i>
           </a>
         ) : (
-          <h3 className="resume-position-title-no-link font-weight-bold mb-1">{props.title}</h3>
+          <h3 className="resume-position-title-no-link fw-bold mb-1">{props.title}</h3>
         )}
-        <div className="resume-company-name ml-auto">{props.company}</div>
+        <div className="resume-company-name ms-auto">{props.company}</div>
       </div>
       {props.role}
       {props.from.length > 0 && (
